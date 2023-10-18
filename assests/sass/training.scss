@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$White: #fff;
+$first-color: #537895;
+$second-color: #97bdda;
+$third-color: #c2dbee;
+$grey: #82878b;
+$grey2: #e5e7e9;
+$success: #34f458;
+$error: #f90a0a;
+$font-size1: 2rem;
+$font-size2: 1.5rem;
+$font-size3: 1rem;
+$font-size4: 0.8rem;
+$z-index: 1000;
+$z-index2: 1001;
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 72%;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  margin: 20px auto;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  background-color: $White;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  h4 {
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: $first-color;
+  }
+
+  a {
+    font-size: $font-size2;
+  }
+}
+
+.topbar {
+  .icon {
+    .sidebar_control {
+      border: 1px solid $first-color;
+      padding: 10px 10px;
+      border-radius: 8px;
+      display: inline-flex;
+      cursor: pointer;
+      transition: all 1s ease-in-out;
+
+      &:hover {
+        color: $second-color;
+        background-color: $first-color;
+      }
+
+      i {
+        font-size: $font-size2;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  .topbar {
+    h4{
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px){
+  .topbar {
+    h4{
+      font-size: 1rem;
+    }
+
+    a{
+      font-size: $font-size3;
+      font-weight: bold;
+    }
+  }
+}
+// ============== sidebar menu ================
+.menu_item {
+  box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+  background-color: $grey2;
+
+  h2{
+    font-weight: bold;
+    color: $second-color;
+  }
+  .list {
+    width: 100%;
+    display: inline-block;
+    // background: $third-color;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 10px 20px;
+    outline: none;
+    border-left: 8px solid $grey2;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      background: $first-color;
+      outline: none;
+    }
+
+    a {
+      display: block;
+      font-size: $font-size2;
+    }
+  }
+}
+
+.menu_item .list:hover a {
+  color: $White;
+}
+
+// =================== Active Link ===================
+a:is(:link, :active, :visited).active {
+  color: $first-color;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+// ==================== First Page =======================
+.first_page {
+  background: url("../img/star.gif");
+  height: 400px;
+
+  h1 {
+    // background: $third-color;
+    color: $first-color;
+    font-weight: bold;
+  }
+}
+
+
+@media screen and (max-width:994px){
+  .first_page{
+    h1{
+      margin-top: 10px;
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .first_page{
+    h1{
+      margin-top: 10px;
+      font-size: 2rem;
+    }
+  }
+}
+
+// ================ Course List =====================
+.courseList {
+  .card {
+    .card-header {
+      .card-link {
+        font-size: 2rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          letter-spacing: 1px;
+          font-weight: bold;
+          color: $first-color;
+        }
+      }
+    }
+
+    .card-body {
+      background-color: $third-color;
+      padding: 15px 30px;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      ol {
+        li {
+          list-style-type: decimal;
+          font-size: 1.5rem;
+        }
+
+        ul {
+          li {
+            padding-left: 20px;
+            list-style-type: none;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      h3 {
+        background-color: $first-color;
+        padding: 8px;
+        color: $White;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// -----------------------------Achievers--------------------------
+.achiever_section {
+  padding: 15px;
+
+  .heading_achievers {
+    h1 {
+      font-family: "Poppins", sans-serif;
+      color: $first-color;
+    }
+    p {
+      font-size: $font-size3;
+    }
+  }
+
+  .achiever_container {
+    .item {
+      padding: 10px;
+
+      .card {
+        transform: scale(0.95);
+        // background: $third-color;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        transition: all 500ms ease-in-out;
+
+        .img-header {
+          min-height: 150px;
+          img {
+            position: absolute;
+            height: 50%;
+            border-radius: 50%;
+            border: 10px solid $White;
+            top: 0;
+            left: 0;
+            transition: all 500ms ease-in-out;
+          }
+        }
+
+        .card-footer {
+          font-size: $font-size3 !important;
+          border-bottom-right-radius: 80px;
+        }
+
+        &:hover {
+          background: $first-color;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.achiever_section .achiever_container .item .card:hover .card-body {
+  background: $second-color;
+  color: $White;
+}
+
+.achiever_section .achiever_container .item .card:hover .card-footer {
+  background: $first-color;
+  color: $White;
+}
+
+.achiever_section .achiever_container .item .card:hover .img-header img {
+  border: 10px solid $first-color;
+}
+
+@media screen and (max-width: 900px) {
+  .achiever_section {
+    .heading_achievers {
+      h1 {
+        font-size: $font-size1;
+        position: relative;
+
+        &::before{
+          content: "";
+          width: 40%;
+          height: 1px;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: orangered;
+          position: absolute;
+        }
+      }
+      p {
+        font-size: $font-size3;
+      }
+    }
+  }
+}
+
+// ============================ BANK ============================
+.training_account {
+  // width: 780px;
+  // margin: 0 auto;
+
+  .card-header {
+    background: $first-color;
+
+    h1 {
+      color: $third-color;
+    }
+  }
+
+  .card-body {
+    background: url("../img/45degreee_fabric.png");
+    p {
+      font-size: $font-size1;
+    }
+  }
+}

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Raleway:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 72%;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  margin: 20px auto;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.topbar h4 {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #537895;
+}
+.topbar a {
+  font-size: 1.5rem;
+}
+
+.topbar .icon .sidebar_control {
+  border: 1px solid #537895;
+  padding: 10px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.topbar .icon .sidebar_control:hover {
+  color: #97bdda;
+  background-color: #537895;
+}
+.topbar .icon .sidebar_control i {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .topbar h4 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .topbar h4 {
+    font-size: 1rem;
+  }
+  .topbar a {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+.menu_item {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #e5e7e9;
+}
+.menu_item h2 {
+  font-weight: bold;
+  color: #97bdda;
+}
+.menu_item .list {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  padding: 10px 20px;
+  outline: none;
+  border-left: 8px solid #e5e7e9;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: all 1s ease-in-out;
+}
+.menu_item .list:hover {
+  background: #537895;
+  outline: none;
+}
+.menu_item .list a {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.menu_item .list:hover a {
+  color: #fff;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #537895;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.first_page {
+  background: url("../img/star.gif");
+  height: 400px;
+}
+.first_page h1 {
+  color: #537895;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 994px) {
+  .first_page h1 {
+    margin-top: 10px;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .first_page h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+}
+.courseList .card .card-header .card-link {
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.courseList .card .card-header .card-link:hover {
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #537895;
+}
+.courseList .card .card-body {
+  background-color: #c2dbee;
+  padding: 15px 30px;
+}
+.courseList .card .card-body p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.courseList .card .card-body ol li {
+  list-style-type: decimal;
+  font-size: 1.5rem;
+}
+.courseList .card .card-body ol ul li {
+  padding-left: 20px;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.courseList .card .card-body h3 {
+  background-color: #537895;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.achiever_section {
+  padding: 15px;
+}
+.achiever_section .heading_achievers h1 {
+  font-family: "Poppins", sans-serif;
+  color: #537895;
+}
+.achiever_section .heading_achievers p {
+  font-size: 1rem;
+}
+.achiever_section .achiever_container .item {
+  padding: 10px;
+}
+.achiever_section .achiever_container .item .card {
+  transform: scale(0.95);
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  transition: all 500ms ease-in-out;
+}
+.achiever_section .achiever_container .item .card .img-header {
+  min-height: 150px;
+}
+.achiever_section .achiever_container .item .card .img-header img {
+  position: absolute;
+  height: 50%;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease-in-out;
+}
+.achiever_section .achiever_container .item .card .card-footer {
+  font-size: 1rem !important;
+  border-bottom-right-radius: 80px;
+}
+.achiever_section .achiever_container .item .card:hover {
+  background: #537895;
+  transform: scale(1);
+}
+
+.achiever_section .achiever_container .item .card:hover .card-body {
+  background: #97bdda;
+  color: #fff;
+}
+
+.achiever_section .achiever_container .item .card:hover .card-footer {
+  background: #537895;
+  color: #fff;
+}
+
+.achiever_section .achiever_container .item .card:hover .img-header img {
+  border: 10px solid #537895;
+}
+
+@media screen and (max-width: 900px) {
+  .achiever_section .heading_achievers h1 {
+    font-size: 2rem;
+    position: relative;
+  }
+  .achiever_section .heading_achievers h1::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orangered;
+    position: absolute;
+  }
+  .achiever_section .heading_achievers p {
+    font-size: 1rem;
+  }
+}
+.training_account .card-header {
+  background: #537895;
+}
+.training_account .card-header h1 {
+  color: #c2dbee;
+}
+.training_account .card-body {
+  background: url("../img/45degreee_fabric.png");
+}
+.training_account .card-body p {
+  font-size: 2rem;
+}/*# sourceMappingURL=training.css.map */

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$White: #fff;
+$first-color: #537895;
+$second-color: #97bdda;
+$third-color: #c2dbee;
+$grey: #82878b;
+$grey2: #e5e7e9;
+$success: #34f458;
+$error: #f90a0a;
+$orange: #ff6e40;
+$black: #322e2f;
+$sky-blue: #d6eaf8;
+$mango: #ffc13b;
+$font-size1: 2rem;
+$font-size2: 1.5rem;
+$font-size3: 1rem;
+$font-size4: 0.8rem;
+$z-index: 1000;
+$z-index2: 1001;
+
+//====================== service center home page =====================
+.serviceCenter_page {
+  background: url("../img/technology.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+  h2 {
+    color: $White;
+    background: $first-color;
+  }
+}
+
+@media screen and (max-width:994px){
+  .serviceCenter_page{
+    h2{
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .serviceCenter_page{
+    h2{
+      font-size: 2rem;
+    }
+  }
+}
+
+// ==================== Schedule form =====================
+
+.service_box {
+  background-image: linear-gradient(135deg, #dfe9f3 10%, #ffffff 100%);
+  // background-image: linear-gradient(135deg, #a8edea 10%, #fed6e3 100%);
+  .card-body {
+    .nav {
+      .nav-link {
+        font-size: 1.7rem !important;
+        margin-right: 10px;
+      }
+    }
+
+    .tab-content {
+      .panel-heading {
+        font-size: $font-size2;
+        border-bottom: 1px solid $White;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+
+      .panel-body {
+        label {
+          font-size: 1.4rem;
+        }
+        .form-control {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+
+.active_tab1 {
+  background-color: $first-color;
+  color: $White;
+  text-transform: uppercase;
+  //   font-weight: 600;
+
+  &:hover {
+    color: $third-color;
+  }
+}
+
+.inactive_tab1 {
+  background-color: #f5f5f5;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.has-error {
+  border-color: #cc0000;
+  background-color: #ff9;
+}
+
+// ========================== Service Work ===========================
+.serviceWork {
+  h2 {
+    background-color: $first-color;
+    padding: 10px 5px;
+    color: $White;
+    border-left: 10px solid $orange;
+  }
+
+  .card {
+    background-color: $grey2;
+    color: $black;
+    transition: all 500ms ease-in-out;
+    h3 {
+      text-align: center;
+      font-weight: 500;
+      padding: 30px 10px;
+    }
+
+    &:hover {
+      background-color: $second-color;
+      color: $White;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+// ====================== serviceOffer ======================
+.serviceOffer {
+  h2 {
+    background-color: $first-color;
+    padding: 10px 5px;
+    color: $White;
+    border-left: 10px solid $orange;
+  }
+
+  ul{
+    li{
+      font-size: $font-size1;
+      margin-bottom: 15px;
+      padding: 8px 10px;
+      background-color: $mango;
+      border-left: 35px solid $first-color;
+      border-radius: 5px;
+      position: relative;
+      transition: all 500ms linear;
+
+      &:hover{
+        background-color: $first-color;
+        color: $third-color;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.serviceOffer{
+  ul{
+    li:before{
+      position: absolute;
+      left: -25px;
+      content: '✓';
+      color: $success;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+// =================== Service Bank =======================
+.service_account {
+  // width: 780px;
+  // margin: 0 auto;
+
+  .card-header {
+    background: $first-color;
+
+    h1 {
+      color: $third-color;
+    }
+  }
+
+  .card-body {
+    background: url("../img/45degreee_fabric.png");
+    p {
+      font-size: $font-size1;
+    }
+  }
+}
