@@ -6,7 +6,7 @@ if (isset($_POST['loginSubmit'])) {
     $pass = $_POST['password'];
     session_start();
 
-    $conn = mysqli_connect('localhost', 'root', '', 'php_test');
+    $conn = mysqli_connect('localhost', 'iscool', 'w^oJtDavqAh6K5fwr&iE', 'iscool');
     $query = "SELECT * FROM admin";
     $query_run = mysqli_query($conn, $query);
 

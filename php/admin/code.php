@@ -1,7 +1,9 @@
 <?php
 session_start();
+// include('../include/dbCon.php');
 
-$conn = mysqli_connect('localhost','root','','php_test');
+
+$conn = mysqli_connect('localhost','iscool','w^oJtDavqAh6K5fwr&iE','iscool');
 
 if (isset($_POST['save_std_image']))
 {

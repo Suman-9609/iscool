@@ -5,10 +5,17 @@
 //     echo $e->getMessage();
 // }
 
-$con = mysqli_connect('localhost','root');
-mysqli_select_db($con,'php_test');
+// $con = mysqli_connect('localhost','iscool');
+// mysqli_select_db($con,'iscool');
 
 // if($res) {
 //     echo "server connected successfully";
 // }
+
+$conn = mysqli_connect('localhost', 'root', '', 'php_test');
+if($conn) {
+    echo "server connected successfully";
+} else {
+    echo "Server error";
+}
 ?>

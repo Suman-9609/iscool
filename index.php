@@ -296,7 +296,7 @@ include './php/include/navbar.php';
         <h1 class="text-center">Our Students</h1>
     </div>
     <?php
-    $conn = mysqli_connect('localhost', 'root', '', 'php_test');
+    $conn = mysqli_connect('localhost', 'iscool', 'w^oJtDavqAh6K5fwr&iE', 'iscool');
     $query = "SELECT * FROM student_gallery";
 
     $query_run = mysqli_query($conn, $query);

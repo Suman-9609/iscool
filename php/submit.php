@@ -3,13 +3,13 @@
 // print_r($_POST);
 
 sleep(3);
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('localhost','iscool','w^oJtDavqAh6K5fwr&iE');
 
 
 if(!$con){
     echo 'Not connected server to';
 }
-if(!mysqli_select_db($con,'php_test'))
+if(!mysqli_select_db($con,'iscool'))
 {
     echo 'Database not selected';
 }
